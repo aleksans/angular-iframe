@@ -1,0 +1,42 @@
+.col-md-4{
+    border: 1px solid grey;
+}
+
+
+.frame-item{
+    display: inline-block;
+    position: relative;
+    .item-controls{
+        .badge{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            &.badge-warning{                
+                right: 20px;                
+            }
+            &.badge-info{
+                right: 40px;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }        
+    }
+    iframe{
+        overflow: auto;
+        display: inline-block;
+        min-width: 200px;
+        min-height: 200px;
+        border: 1px solid grey;
+        resize: both;
+        max-width: 100%;
+        vertical-align: top;
+    }
+    
+}
+.add-item{
+    margin: 20px 0px;
+    input{
+        min-width: 300px;
+    }
+}
